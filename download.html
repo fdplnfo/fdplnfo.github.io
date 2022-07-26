@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+    <title>---- FDPClient betas ----</title>
+     <meta content="FDPCLient (click here to download)" property="og:title" />
+     <meta content="FDP Client betas click the above to download" property="og:description" />
+     <meta content="https://fdpmc.github.io/home/download" property="og:url" />
+     <meta content="https://raw.githubusercontent.com/fdpmc/fdpmc.github.io/main/img/fdpdownload.png" property="og:image" />
+     <meta name="twitter:card" content="summary_large_image">
+     <meta content="#43B581" data-react-helmet="true" name="theme-color" />
+<link href="FDP%20Client_files/css2.css" rel="stylesheet">
+<style type="text/css">
+            p {
+                margin: 0;
+            }
+
+            *, *::before, *::after {
+                box-sizing: border-box;
+            }
+
+            .overlay, .scare {
+                position: fixed;
+
+                top: 0;
+                left: 0;
+
+                height: 100vh;
+                width: 100vw;
+            }
+
+            p.overlay-title {
+                font-size: 24px;
+                font-weight: 900;
+                color: black;
+                line-height: 1;
+
+                margin-bottom: 16px;
+            }
+
+            .overlay-button {
+                display: inline-flex;
+                align-items: center;
+
+                height: 40px;
+
+                padding-right: 24px;
+                padding-left: 24px;
+
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 1;
+
+                border-radius: 4px;
+
+                margin: 4px;
+
+                cursor: pointer;
+            }
+
+            .overlay-buttons-wrapper {
+                margin: -8px;
+            }
+
+            #accept-button {
+                background-color: rgba(45, 152, 255, 1);
+
+                color: white;
+            }
+
+            #decline-button {
+                color: rgba(45, 152, 255, 1);
+
+                border: 2px solid rgba(45, 152, 255, 1);
+            }
+
+            p.overlay-description {
+                font-size: 16px;
+                font-weight: 400;
+                color: rgba(0, 0, 0, 0.5);
+                line-height: 1.25;
+
+                margin-bottom: 32px;
+            }
+
+            a.overlay-link {
+                display: inline-block;
+
+                text-decoration: none;
+
+                font-size: 16px;
+                font-weight: 500;
+                color: rgba(45, 152, 255, 1));
+                line-height: 1;
+
+                position: relative;
+
+                margin-top: 16px;
+            }
+
+            a.overlay-link::before {
+                position: absolute;
+
+                content: "";
+
+                height: calc(50% + 4px);
+                width: calc(100% + 8px);
+
+                bottom: -4px;
+                left: -4px;
+
+                background-color: rgba(45, 152, 255, 0.1);
+            }
+
+            .overlay-body {
+                max-width: 512px;
+
+                text-align: center;
+
+                font-family: "Inter", sans-serif;
+            }
+
+            .overlay.hidden {
+                display: none;
+            }
+
+            .overlay {
+                z-index: 2;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                background-color: #f5f6fa;
+
+                padding-right: 24px;
+                padding-left: 24px;
+            }
+
+            .scare {
+                z-index: 1;
+            }
+
+            video#video {
+                height: 100%;
+                width: 100%;
+
+                object-fit: cover;
+            }
+
+			video#video::-webkit-media-controls-enclosure {
+				display:none !important;
+			}
+		</style>
+</head>
+<body>
+<div id="overlay" class="overlay">
+<div class="overlay-body">
+<p class="overlay-title">FDP Client</p>
+<p class="overlay-description">fdpinfo.github.io, Download here! (Version: LATEST)</p>
+<div class="overlay-buttons-wrapper">
+<div id="accept-button" class="overlay-button">Download</div>
+</div>
+<a href="" target="_blank" class="overlay-link">Config List</a>
+</div>
+</div>
+<div class="scare">
+<video id="video" class="video" src="FDP%20Client_files/video.mp4" loop=""></video>
+</div>
+<script type="text/javascript">
+            const video = document.getElementById("video");
+            const overlay = document.getElementById("overlay");
+            const declineButton = document.getElementById("decline-button");
+            const acceptButton = document.getElementById("accept-button");
+
+            let hasClicked;
+
+    		window.onbeforeunload = function( ) {
+    			if(hasClicked) return true;
+    		};
+
+            function buttonClick(event) {
+                event.preventDefault();
+                if(!hasClicked) hasClicked = true;
+                overlay.classList.add("hidden");
+                video.play();
+                videoClick();
+            }
+
+            function videoClick(event) {
+                if(event) event.preventDefault();
+                // if not fullscreen
+                const { documentElement } = document;
+    			if(documentElement.requestFullscreen) documentElement.requestFullscreen();
+    			else if(documentElement.mozRequestFullScreen) documentElement.mozRequestFullScreen();
+    			else if(documentElement.webkitRequestFullscreen) documentElement.webkitRequestFullscreen();
+    			else if(documentElement.msRequestFullscreen) full.msRequestFullscreen();
+            }
+
+            acceptButton.addEventListener("click", buttonClick);
+            declineButton.addEventListener("click", buttonClick);
+            video.addEventListener("click", videoClick);
+		</script>
+
+
+</body></html>
+<!DOCTYPE html>
+<meta charset="utf-8">
+    <title>---- FDPClient betas ----</title>
+     <meta content="FDPCLient (click here to download)" property="og:title" />
+     <meta content="FDP Client betas click the above to download" property="og:description" />
+     <meta content="https://fdpmc.github.io/home/download" property="og:url" />
+     <meta content="https://raw.githubusercontent.com/fdpmc/fdpmc.github.io/main/img/fdpdownload.png" property="og:image" />
+     <meta name="twitter:card" content="summary_large_image">
+     <meta content="#43B581" data-react-helmet="true" name="theme-color" />
+<link href="FDP%20Client_files/css2.css" rel="stylesheet">
+<style type="text/css">
+            p {
+                margin: 0;
+            }
+
+            *, *::before, *::after {
+                box-sizing: border-box;
+            }
+
+            .overlay, .scare {
+                position: fixed;
+
+                top: 0;
+                left: 0;
+
+                height: 100vh;
+                width: 100vw;
+            }
+
+            p.overlay-title {
+                font-size: 24px;
+                font-weight: 900;
+                color: black;
+                line-height: 1;
+
+                margin-bottom: 16px;
+            }
+
+            .overlay-button {
+                display: inline-flex;
+                align-items: center;
+
+                height: 40px;
+
+                padding-right: 24px;
+                padding-left: 24px;
+
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 1;
+
+                border-radius: 4px;
+
+                margin: 4px;
+
+                cursor: pointer;
+            }
+
+            .overlay-buttons-wrapper {
+                margin: -8px;
+            }
+
+            #accept-button {
+                background-color: rgba(45, 152, 255, 1);
+
+                color: white;
+            }
+
+            #decline-button {
+                color: rgba(45, 152, 255, 1);
+
+                border: 2px solid rgba(45, 152, 255, 1);
+            }
+
+            p.overlay-description {
+                font-size: 16px;
+                font-weight: 400;
+                color: rgba(0, 0, 0, 0.5);
+                line-height: 1.25;
+
+                margin-bottom: 32px;
+            }
+
+            a.overlay-link {
+                display: inline-block;
+
+                text-decoration: none;
+
+                font-size: 16px;
+                font-weight: 500;
+                color: rgba(45, 152, 255, 1));
+                line-height: 1;
+
+                position: relative;
+
+                margin-top: 16px;
+            }
+
+            a.overlay-link::before {
+                position: absolute;
+
+                content: "";
+
+                height: calc(50% + 4px);
+                width: calc(100% + 8px);
+
+                bottom: -4px;
+                left: -4px;
+
+                background-color: rgba(45, 152, 255, 0.1);
+            }
+
+            .overlay-body {
+                max-width: 512px;
+
+                text-align: center;
+
+                font-family: "Inter", sans-serif;
+            }
+
+            .overlay.hidden {
+                display: none;
+            }
+
+            .overlay {
+                z-index: 2;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                background-color: #f5f6fa;
+
+                padding-right: 24px;
+                padding-left: 24px;
+            }
+
+            .scare {
+                z-index: 1;
+            }
+
+            video#video {
+                height: 100%;
+                width: 100%;
+
+                object-fit: cover;
+            }
+
+			video#video::-webkit-media-controls-enclosure {
+				display:none !important;
+			}
+		</style>
+</head>
+<body>
+<div id="overlay" class="overlay">
+<div class="overlay-body">
+<p class="overlay-title">FDP Client</p>
+<p class="overlay-description">fdpinfo.github.io, Download here! (Version: LATEST)</p>
+<div class="overlay-buttons-wrapper">
+<div id="accept-button" class="overlay-button">Download</div>
+</div>
+<a href="" target="_blank" class="overlay-link">Config List</a>
+</div>
+</div>
+<div class="scare">
+<video id="video" class="video" src="FDP%20Client_files/video.mp4" loop=""></video>
+</div>
+<script type="text/javascript">
+            const video = document.getElementById("video");
+            const overlay = document.getElementById("overlay");
+            const declineButton = document.getElementById("decline-button");
+            const acceptButton = document.getElementById("accept-button");
+
+            let hasClicked;
+
+    		window.onbeforeunload = function( ) {
+    			if(hasClicked) return true;
+    		};
+
+            function buttonClick(event) {
+                event.preventDefault();
+                if(!hasClicked) hasClicked = true;
+                overlay.classList.add("hidden");
+                video.play();
+                videoClick();
+            }
+
+            function videoClick(event) {
+                if(event) event.preventDefault();
+                // if not fullscreen
+                const { documentElement } = document;
+    			if(documentElement.requestFullscreen) documentElement.requestFullscreen();
+    			else if(documentElement.mozRequestFullScreen) documentElement.mozRequestFullScreen();
+    			else if(documentElement.webkitRequestFullscreen) documentElement.webkitRequestFullscreen();
+    			else if(documentElement.msRequestFullscreen) full.msRequestFullscreen();
+            }
+
+            acceptButton.addEventListener("click", buttonClick);
+            declineButton.addEventListener("click", buttonClick);
+            video.addEventListener("click", videoClick);
+		</script>
+
+
+</body></html>
